@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSpace Programming Classes</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+
+<header>
+    <img src="{% static 'main/images/techspace-logo.png' %}" alt="TechSpace Logo" class="logo">
+    <nav>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#locations">Locations</a>
+    </nav>
+</header>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer>
+    <p>© 2026 TechSpace Programming Classes | Kalamboli & Kamothe</p>
+</footer>
+
+<!-- JS -->
+<script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+/* ====== Reset & Base ====== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* white background */
+    color: #0d1b2a; /* dark navy blue text */
+}
+
+/* ====== Page Layout ====== */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* ====== Header ====== */
+header {
+    text-align: center;
+    padding: 20px;
+}
+header .logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+header p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #0d1b2a;
+}
+
+/* ====== Navigation ====== */
+nav {
+    background-color: #0d1b2a; /* dark navy */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav li {
+    margin: 0;
+}
+nav li a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+nav li a:hover,
+nav li a.active-link {
+    background-color: #3498db; /* sky blue highlight */
+    color: white;
+    border-radius: 5px;
+}
+
+/* ====== Tab Content ====== */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+.tab-content.active {
+    display: block;
+}
+h2 {
+    color: #3498db; /* sky blue heading */
+    margin-bottom: 15px;
+}
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* ====== Team Section ====== */
+.team-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.team-container::-webkit-scrollbar {
+    height: 8px;
+}
+.team-container::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* sky blue scrollbar */
+    border-radius: 4px;
+}
+.team-card {
+    flex: 0 0 280px;
+    background-color: #f8f9fa; /* light grey card for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.team-card h3 {
+    color: #0d1b2a; /* dark navy */
+    margin-bottom: 5px;
+}
+.team-card h4 {
+    color: #3498db; /* sky blue */
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.team-card p {
+    font-size: 0.95rem;
+    color: #1b263b; /* navy text */
+    margin-bottom: 8px;
+}
+
+/* ====== Footer ====== */
+footer {
+    background-color: #0d1b2a; /* dark navy */
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ====== Animations ====== */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* ====== Responsive ====== */
+@media(max-width: 768px){
+    nav ul {
+        flex-direction: column;
+    }
+    nav li a {
+        text-align: center;
+    }
+    .team-card {
+        flex: 0 0 220px;
+    }
+}
+
+/* ====== Contact Section ====== */
+#contact {
+    background-color: white; /* main background is white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-person {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #1abc9c; /* sky blue accent */
+}
+
+.contact-person h3 {
+    color: #2c3e50; /* dark navy */
+    margin-bottom: 5px;
+}
+
+.contact-person h4 {
+    color: #1abc9c; /* sky blue */
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact-person p {
+    color: #34495e; /* slightly lighter navy */
+    margin-bottom: 3px;
+    font-size: 0.95rem;
+}
+
+.contact-person a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.contact-person a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.social a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+

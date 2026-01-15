@@ -1,0 +1,352 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechSpace Programming Institute</title>
+    <link rel="stylesheet" href="{% static 'main/css/style_2.css' %}">
+</head>
+<body>
+
+<header class="hero">
+    <img src="{% static 'main/images/techspace-logo.jpg' %}" class="logo">
+    <h1>TechSpace Programming Institute</h1>
+    <p>Industry-Ready Training to Crack Placements & Internships</p>
+    <a href="#enquiry" class="cta">Apply for Training</a>
+</header>
+
+<section class="about">
+    <h2>About TechSpace</h2>
+    <p>
+        TechSpace Programming Institute delivers career-focused IT training
+        with real-life projects, internships, hackathons, and placement preparation.
+        We don't just teach — we build developers.
+    </p>
+</section>
+
+<!-- ================= PROGRAMS ================= -->
+<section class="programs">
+    <h2>Our Core Programs</h2>
+    <p class="section-subtitle">
+        Industry-focused training programs designed for placements & internships
+    </p>
+
+    <div class="program-grid">
+
+        <!-- Python -->
+        <div class="program-card" onclick="toggleProgram(this)">
+            <h3>Python Programming (Core + Advanced)</h3>
+            <p class="program-tagline">Foundation for all IT career paths</p>
+
+            <div class="program-details">
+                <h4>Core Python</h4>
+                <ul>
+                    <li>Syntax, Data Types & Operators</li>
+                    <li>Loops, Conditions & Functions</li>
+                    <li>Collections (List, Tuple, Set, Dict)</li>
+                </ul>
+
+                <h4>Advanced Python</h4>
+                <ul>
+                    <li>OOP Concepts</li>
+                    <li>File & Exception Handling</li>
+                    <li>Decorators, Generators & Regex</li>
+                    <li>Multithreading Basics</li>
+                </ul>
+
+                <h4>Projects & Internship</h4>
+                <ul>
+                    <li>Live Python Applications</li>
+                    <li>Hackathons & Capstone Project</li>
+                    <li>1-Month Internship</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="program-card" onclick="toggleProgram(this)">
+            <h3>Data Science & AI / ML</h3>
+            <p class="program-tagline">Data-driven intelligence & AI systems</p>
+
+            <div class="program-details">
+                <ul>
+                    <li>Statistics & Machine Learning</li>
+                    <li>Deep Learning (NLP & CV)</li>
+                    <li>Generative AI & RAG</li>
+                    <li>Power BI Dashboards</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Full Stack -->
+        <div class="program-card" onclick="toggleProgram(this)">
+            <h3>Full Stack Development</h3>
+            <p class="program-tagline">End-to-end web solutions</p>
+
+            <div class="program-details">
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Django & DRF</li>
+                    <li>React / Angular</li>
+                    <li>GitHub Portfolio</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="program-card" onclick="toggleProgram(this)">
+            <h3>Backend Development</h3>
+            <p class="program-tagline">Scalable APIs & systems</p>
+
+            <div class="program-details">
+                <ul>
+                    <li>Python & SQL</li>
+                    <li>Django REST Framework</li>
+                    <li>Authentication & Security</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="program-card" onclick="toggleProgram(this)">
+            <h3>Frontend Development</h3>
+            <p class="program-tagline">Modern UI & UX</p>
+
+            <div class="program-details">
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React / Angular</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ================= TEAM & CONTACT ================= -->
+<section class="team-section">
+    <h2>Leadership & Contact</h2>
+    <p class="section-subtitle">
+        Meet the people behind TechSpace Programming Institute
+    </p>
+
+    <div class="team-container">
+
+        <!-- Founder -->
+        <div class="team-card">
+            <div class="team-avatar">OJ</div>
+
+            <div class="team-info">
+                <h3>Omkar Jagdale</h3>
+                <h4>Founder & Technical Lead</h4>
+
+                <p class="experience">
+                    2+ years industry experience <br>
+                    6+ years teaching experience
+                </p>
+
+                <div class="contact-info">
+                    <a href="tel:9321674997">📞 +91 93216 74997</a>
+                    <a href="mailto:omkarcoder18@gmail.com">
+                        ✉️ omkarcoder18@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Operations Head -->
+        <div class="team-card">
+            <div class="team-avatar">HS</div>
+
+            <div class="team-info">
+                <h3>Harsh Shinde</h3>
+                <h4>Operations & Program Manager</h4>
+
+                <p class="experience">
+                    Institute operations, student coordination,<br>
+                    certifications, LinkedIn & hackathons
+                </p>
+
+                <div class="contact-info">
+                    <a href="tel:9137289227">📞 +91 91372 89227</a>
+                    <a href="mailto:harsh4687.techie@gmail.com">
+                        ✉️ harsh4687.techie@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="events">
+    <h2>Our Events & Celebrations</h2>
+
+    <div class="event-grid">
+
+        <!-- Event 0: kalamboli-->
+        <div class="event-card">
+            <video controls autoplay muted loop>
+                <source src="{% static 'main/our event/Kalamboli-Branch.mp4' %}" type="video/mp4">
+                Kalamboli Branch
+            </video>
+            <h4>Kalamboli Branch</h4>
+        </div>
+
+        <!-- Event 1: Diwali Celebration -->
+        <div class="event-card">
+            <video controls autoplay muted loop>
+                <source src="{% static 'main/our event/diwali-celebration.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h4>Diwali Celebration</h4>
+        </div>
+
+        <!-- Event 2: Hackathon Work -->
+        <div class="event-card">
+            <video controls autoplay muted loop>
+                <source src="{% static 'main/our event/hackthon-work.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h4>Hackathon Work</h4>
+        </div>
+
+        <!-- Event 3: Kamothe Branch Opening -->
+        <div class="event-card">
+            <video controls autoplay muted loop>
+                <source src="{% static 'main/our event/Kamothe-Branch-Opening.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h4>Kamothe Branch Opening</h4>
+        </div>
+
+        <!-- Event 4: TechSpace Team -->
+        <div class="event-card">
+            <video controls autoplay muted loop>
+                <source src="{% static 'main/our event/TechSpace-team.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h4>TechSpace Team</h4>
+        </div>
+        <!-- Event 5: Secreate Santa -->
+        <div class="event-card">
+            <video controls autoplay muted loop>
+                <source src="{% static 'main/our event/Secret-Santa.mp4' %}" type="video/mp4">
+                Christamas Celebration
+            </video>
+            <h4>Christamas Celebration</h4>
+        </div>
+
+        <!-- Event 6: TechSpace Family (optional image) -->
+        <div class="event-card">
+            <img src="{% static 'main/our event/TechSpace-family.jpeg' %}" alt="TechSpace Family">
+            <h4>TechSpace Family</h4>
+        </div>
+        
+
+    </div>
+</section>
+
+
+
+<!-- ================= BRANCH LOCATIONS ================= -->
+<section class="branches">
+    <h2>Our Branch Locations</h2>
+    <p class="section-subtitle">
+        TechSpace Programming Institute is proudly located in Navi Mumbai
+    </p>
+
+    <div class="branch-container">
+
+        <!-- Kamothe Branch -->
+        <div class="branch-card">
+            <div class="branch-header">
+                <span class="branch-icon">📍</span>
+                <h3>Kamothe Branch</h3>
+            </div>
+
+            <p class="branch-address">
+                Shop No. 1, Om Sai Darshan CHS,<br>
+                Sector 34, Plot No. 144–145,<br>
+                Kamothe, Navi Mumbai
+            </p>
+
+            <p class="branch-landmark">
+                <strong>Landmark:</strong> Near Copper Kadai Hotel
+            </p>
+        </div>
+
+        <!-- Kalamboli Branch -->
+        <div class="branch-card">
+            <div class="branch-header">
+                <span class="branch-icon">📍</span>
+                <h3>Kalamboli Branch</h3>
+            </div>
+
+            <p class="branch-address">
+                Ashthavinayak Building, KL-5,<br>
+                Building No. 01, Room No. 09,<br>
+                Sector 02, Kalamboli,<br>
+                Navi Mumbai – 410218
+            </p>
+            <p class="branch-landmark">
+                <strong>Landmark:</strong> Near Joseph High School
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CERTIFICATION ================= -->
+<section class="certification">
+    <h2>Certifications You Receive</h2>
+
+    <div class="certificate-grid">
+        <div class="certificate-card">
+            <img src="{% static 'main/images/python-certificate.jpg' %}">
+            <h4>Course Completion Certificate</h4>
+        </div>
+
+        <div class="certificate-card">
+            <img src="{% static 'main/images/internship-certificate.jpg' %}">
+            <h4>Internship Certificate</h4>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ENQUIRY ================= -->
+<section class="feedback" id="enquiry">
+    <h2>Student Enquiry</h2>
+
+    {% if success %}
+        <p class="success">Thank you! Our team will contact you shortly.</p>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="text" name="qualification" placeholder="Current Qualification" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="contact" placeholder="Contact Number" required>
+
+        <select name="course" required>
+            <option value="">Interested Course</option>
+            <option value="python">Python Programming</option>
+            <option value="fullstack">Full Stack Development</option>
+            <option value="backend">Backend Development</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="datascience">Data Science & AI/ML</option>
+        </select>
+
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit Enquiry</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 TechSpace Programming Institute | Kalamboli & Kamothe
+</footer>
+
+<script src="{% static 'main/js/script_2.js' %}"></script>
+</body>
+</html>

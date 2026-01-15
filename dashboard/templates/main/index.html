@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSpace Programming Institute</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+
+<header>
+    <img src="{% static 'main/images/techspace-logo.jpg' %}" alt="TechSpace Programming Institute Logo" class="logo">
+    <p>Coding for the Future of Business and Technology</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#" onclick="showTab('team', this)" class="active-link">Team</a></li>
+        <li><a href="#" onclick="showTab('contact', this)">Contact Us</a></li>
+        <li><a href="#" onclick="showTab('careers', this)">Careers</a></li>
+        <li><a href="#" onclick="showTab('technologies', this)">Technologies</a></li>
+        <li><a href="#" onclick="showTab('journey', this)">Journey</a></li>
+        <li><a href="#" onclick="showTab('services', this)">Services</a></li>
+        <li><a href="#" onclick="showTab('blogs', this)">Blogs</a></li>
+        <li><a href="#" onclick="showTab('events', this)">Events</a></li>
+        <li><a href="#" onclick="showTab('works', this)">Works</a></li>
+        <li><a href="#" onclick="showTab('case-studies', this)">Case Studies</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Team Section -->
+    <div id="team" class="tab-content active">
+        <h2>Our Team</h2>
+        <div class="team-container">
+
+            <div class="team-card">
+                <h3>Omkar Jagdale</h3>
+                <h4>Founder & Technical Lead</h4>
+                <p><strong>Position:</strong> Founder & Technical Lead (Software Development / IT Training)</p>
+                <p><strong>Experience:</strong> 2+ years industry experience as Technical Lead and 6+ years teaching experience in programming and IT training.</p>
+            </div>
+
+            <div class="team-card">
+                <h3>Harsh Shinde</h3>
+                <h4>Operations & Program Manager</h4>
+                <p>Manages day-to-day institute operations, LinkedIn and team tracking, student communication, certifications, and hackathon coordination; second-highest authority after the founder.</p>
+            </div>
+
+            <div class="team-card">
+                <h3>Sushant Sawant</h3>
+                <h4>Training & Career Development Mentor</h4>
+                <p>Manages assignments, weekly coding practice, and supports students’ personality development and professional skills.</p>
+            </div>
+
+            <div class="team-card">
+                <h3>Aditya Jagtap</h3>
+                <h4>Training & Coding Practice Mentor</h4>
+                <p>Handles coding assignments, weekly code practice sessions, and helps students build discipline and confidence in coding.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="tab-content">
+        <h2>Contact Us</h2>
+
+        <div class="contact-person">
+            <h3>Omkar Jagdale</h3>
+            <h4>Founder and Director</h4>
+            <p>Phone: 9321674997</p>
+            <p>Email: <a href="mailto:omkarcoder18@gmail.com">omkarcoder18@gmail.com</a></p>
+        </div>
+
+        <div class="contact-person">
+            <h3>Harsh Shinde</h3>
+            <h4>Head of Operation</h4>
+            <p>Phone: 9137289227</p>
+            <p>Email: <a href="mailto:harsh4687.techie@gmail.com">harsh4687.techie@gmail.com</a></p>
+        </div>
+
+        <div class="contact-person">
+            <h3>Sushant Shinde</h3>
+            <h4>Training & Career Development Mentor</h4>
+            <p>Phone: 970195544</p>
+        </div>
+        <div class="contact-person">
+            <h3>Aditya Jagtap</h3>
+            <h4>Training & Coding Practice Mentor</h4>
+            <p>Phone: 9321302049</p>
+        </div>
+
+    <!-- Careers Section -->
+    <div id="careers" class="tab-content">
+        <h2>Careers</h2>
+        <p>Explore opportunities to grow and work with our team.</p>
+    </div>
+
+    <!-- Technologies Section -->
+    <div id="technologies" class="tab-content">
+        <h2>Technologies</h2>
+        <p>Learn Python, JavaScript, HTML, CSS, AI, and more cutting-edge technologies.</p>
+    </div>
+
+    <!-- Journey Section -->
+    <div id="journey" class="tab-content">
+        <h2>Journey</h2>
+        <p>Discover the journey of TechSpace from inception to becoming a leading programming institute.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="tab-content">
+        <h2>Services</h2>
+        <p>We provide training, workshops, mentorship, and placement assistance.</p>
+    </div>
+
+    <!-- Blogs Section -->
+    <div id="blogs" class="tab-content">
+        <h2>Blogs</h2>
+        <p>Read articles, tutorials, and insights from our instructors.</p>
+    </div>
+
+    <!-- Events Section -->
+    <div id="events" class="tab-content">
+        <h2>Events</h2>
+        <p>Join our webinars, hackathons, and live coding events.</p>
+    </div>
+
+    <!-- Works Section -->
+    <div id="works" class="tab-content">
+        <h2>Works</h2>
+        <p>Check out our completed projects and student work portfolios.</p>
+    </div>
+
+    <!-- Case Studies Section -->
+    <div id="case-studies" class="tab-content">
+        <h2>Case Studies</h2>
+        <p>Detailed case studies from real-world programming and tech projects.</p>
+    </div>
+
+</main>
+
+<footer>
+    &copy; 2025 TechSpace Programming Institute. All rights reserved.
+</footer>
+
+<!-- JS -->
+<script src="{% static 'main/js/script.js'  %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,511 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #ffffff;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* ================= HERO ================= */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 60%,
+        #ecf7f6
+    );
+}
+
+.logo {
+    max-width: 240px;   /* Increased from 160px */
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(
+        90deg,
+        #1a504f 50%,   /* Dark Navy Blue */
+        #0d5e5b 50%   /* Bright Sky Blue */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #34495e;
+}
+
+.hero .cta {
+    margin-top: 25px;
+    display: inline-block;
+    background: #1abc9c;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero .cta:hover {
+    background: #159a80;
+    transform: translateY(-2px);
+}
+
+/* ================= SECTIONS ================= */
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1abc9c;
+    margin-bottom: 40px;
+}
+
+/* ================= ABOUT ================= */
+.about p {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #3c4a57;
+}
+
+/* ===== Programs Section ===== */
+.programs {
+    background: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.programs h2 {
+    font-size: 2.6rem;
+    color: #0a2540; /* Dark navy */
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #5f6c7b;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.program-card {
+    background: linear-gradient(135deg, #0a2540 50%, #1abc9c 50%);
+    color: white;
+    padding: 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.program-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.program-tagline {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Hidden Details */
+.program-details {
+    background: #ffffff;
+    color: #2c3e50;
+    margin-top: 20px;
+    padding: 0 20px;
+    border-radius: 12px;
+    text-align: left;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+.program-details h4 {
+    color: #1abc9c;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.program-details ul {
+    padding-left: 18px;
+}
+
+.program-details li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+/* Active */
+.program-card.active .program-details {
+    max-height: 600px; /* enough for content */
+    padding: 20px;
+}
+/* ================= TEAM SECTION ================= */
+.team-section {
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #ffffff 50%,
+        #ffffff 50%,
+        #ffffff 100%
+    );
+    padding: 80px 20px;
+    color: #ffffff;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.team-section .section-subtitle {
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 60px;
+}
+
+.team-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 40px;
+}
+
+/* Team Card */
+.team-card {
+    background: #ffffff;
+    color: #0a2540;
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Avatar Circle */
+.team-avatar {
+    width: 80px;
+    height: 80px;
+    background: #1abc9c;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Info */
+.team-info h3 {
+    margin-bottom: 5px;
+}
+
+.team-info h4 {
+    color: #1abc9c;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.team-info .experience {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+/* Contact */
+.contact-info a {
+    display: block;
+    color: #0a2540;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.contact-info a:hover {
+    color: #1abc9c;
+}
+
+
+/* ================= BRANCH LOCATIONS ================= */
+.branches {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.branches h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #0a2540;
+    margin-bottom: 10px;
+}
+
+.branches .section-subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.branch-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 40px;
+}
+
+/* Branch Card */
+.branch-card {
+    border-radius: 18px;
+    padding: 35px;
+    background: linear-gradient(
+        135deg,
+        #f9fbfd,
+        #eef6ff
+    );
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.branch-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Header */
+.branch-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.branch-icon {
+    font-size: 1.6rem;
+}
+
+.branch-header h3 {
+    color: #0a2540;
+    font-size: 1.4rem;
+}
+
+/* Address */
+.branch-address {
+    color: #34495e;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* Landmark */
+.branch-landmark {
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+.events {
+    padding: 60px 20px;
+    background: #f8f9fb;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2.2rem;
+    color: #0a2540;
+    margin-bottom: 40px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.event-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.event-card img,
+.event-card video {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-card h4 {
+    padding: 12px;
+    color: #1abc9c;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* ================= LEARNING FLOW ================= */
+.flow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.flow-step {
+    background: #f8fefe;
+    border-left: 6px solid #1abc9c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ====== Certification Section ====== */
+.certification {
+    background: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.certification h2 {
+    color: #0a2540; /* Dark navy */
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.certificate-card {
+    background: #f8f9fb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.certificate-card h4 {
+    color: #1abc9c; /* Sky blue */
+    font-weight: 600;
+}
+
+
+/* ================= FORM ================= */
+.feedback {
+    background: #f9fbfc;
+    border-radius: 20px;
+}
+
+.feedback form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+.feedback input,
+.feedback select,
+.feedback textarea {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    font-size: 0.95rem;
+}
+
+.feedback textarea {
+    resize: none;
+    height: 120px;
+}
+
+.feedback button {
+    background: #1abc9c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback button:hover {
+    background: #159a80;
+}
+
+.success {
+    text-align: center;
+    color: green;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #1a2a3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
